@@ -3,6 +3,7 @@ import SideBar from './Components/SideBar';
 import Player from './Components/Player';
 import Display from './Components/Display';
 import { PlayerContext } from './Context/PlayerContextCreate';
+import { Analytics } from "@vercel/analytics/next"
 function App(){
   const {audioRef,track} = useContext(PlayerContext);
   return (
@@ -14,6 +15,7 @@ function App(){
         </div>
         <Player/>
         <audio ref={audioRef} src={track.file} preload='auto' ></audio>
+        <Analytics/>
       </div>
     </>
   )
