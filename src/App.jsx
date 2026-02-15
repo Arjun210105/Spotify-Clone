@@ -3,7 +3,7 @@ import SideBar from './Components/SideBar';
 import Player from './Components/Player';
 import Display from './Components/Display';
 import { PlayerContext } from './Context/PlayerContextCreate';
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from '@vercel/analytics/react';
 function App(){
   const {audioRef,track} = useContext(PlayerContext);
   return (

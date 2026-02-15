@@ -4,7 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import PlayerContextProvider from "./Context/PlayerContext.jsx";
-import { Analytics } from "@vercel/analytics/next"
+
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
